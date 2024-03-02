@@ -9,7 +9,7 @@ Proyek ini bertujuan untuk melakukan analisis data terhadap dataset E-Commerce y
 
 ## Struktur Direktori
 
-- **/Dataset**: Direktori ini berisi data-data yang digunakan dalam proyek, dalam format .csv .
+- **Dataset**: Direktori ini berisi data-data yang digunakan dalam proyek, dalam format .csv .
 - **Dashboard.py**: File ini digunakan untuk mengenerate dashboard hasil visualisasi menggunakan streamlit.
 - **notebook.ipnyb**: File ini digunakan untuk melakukan analisis data hingga visualisasinya.
 
