@@ -15,7 +15,7 @@ st.title('Dashboard Aplikasi E-Commerce')
 st.subheader('Fadhila Syahda Faustina Austrin')
 
 # Content
-df = pd.read_csv("C:/Users/fadhi/Downloads/Submission_Proyek Analisis Data_Fadhila Syahda Faustina Austrin/Dashboard/merged_file.csv")
+df = pd.read_csv("merged_file.csv")
 st.header('Brazilian E-Commerce Dashboard :sparkles:')
 
 # Sidebar
@@ -60,7 +60,7 @@ with st.sidebar:
 ## Barchart Kota dengan customer terbanyak
 
 # Baca dataset
-customer_df = pd.read_csv("C:/Users/fadhi/Downloads/Submission_Proyek Analisis Data_Fadhila Syahda Faustina Austrin/Dashboard/merged_file.csv")
+customer_df = pd.read_csv("merged_file.csv")
 
 # Customer di setiap kota
 st.header("1. Hitung jumlah unik customer di setiap kota")
@@ -89,7 +89,7 @@ st.header("2.  Rata rata skala skor ulasan dari produk yang dijual")
 st.markdown("- Rata rata skala skor ulasan")
 
 # Baca dataset
-review_df = pd.read_csv("C:/Users/fadhi/Downloads/Submission_Proyek Analisis Data_Fadhila Syahda Faustina Austrin/Dashboard/merged_file.csv")
+review_df = pd.read_csv("merged_file.csv")
 
 # Hitung rata-rata review_score
 average_review_score = review_df['review_score'].mean()
@@ -115,7 +115,7 @@ st.header("3.  Rata rata waktu pengiriman")
 st.markdown("- Rata rata waktu pengiriman")
 
 # Baca dataset
-order_df = pd.read_csv("C:/Users/fadhi/Downloads/Submission_Proyek Analisis Data_Fadhila Syahda Faustina Austrin/Dashboard/merged_file.csv")
+order_df = pd.read_csv("merged_file.csv")
 
 # Ubah kolom ke datetime
 order_df["order_delivered_carrier_date"] = pd.to_datetime(order_df["order_delivered_carrier_date"])
